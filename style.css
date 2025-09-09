@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Norse";
+  src: url("fonts/Norse-Bold.woff2") format("woff2"),
+    url("fonts/Norse-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  background-image: url("assets/background.jpg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 0 0 40%;
+}
+
+.left .content {
+  margin-top: 20%;
+  background-color: rgb(0 0 0 / 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding: 10px;
+}
+
+.left .content > h1 {
+  font-family: "Norse";
+  font-weight: bold;
+  font-style: normal;
+  color: white;
+  font-size: 70px;
+  height: 70%;
+}
+
+.left .content > img {
+  max-height: 100%;
+  max-width: 50%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 60%;
+}
+
+.first {
+  padding: 5%;
+  background-color: #f5f5f5;
+  flex: 1;
+}
+
+.first .content > p {
+  font-weight: bold;
+}
+
+.second {
+  flex: 1;
+  padding: 0 5% 5% 5%;
+}
+
+.second .content > p {
+  padding: 0 10px;
+  font-weight: bold;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.form div {
+  flex-basis: 50%;
+  box-sizing: border-box;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+.form div > label {
+  font-size: 10px;
+}
+.third {
+  background-color: #f5f5f5;
+  flex: 1;
+}
+input {
+  border-style: solid;
+  border-color: #e5e7eb;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border-width: thin;
+  border-color: blue;
+  box-shadow: 1px 1px 5px lightblue;
+}
+
+input:invalid {
+  outline: none;
+  border-width: thin;
+  border-color: red;
+}
+
+.third {
+  position: relative;
+}
+.third .content {
+  position: absolute;
+  top: 20%;
+  left: 6%;
+}
+
+.third .content button {
+  border-width: thin;
+  background-color: #596d48;
+  color: white;
+  border-radius: 5px;
+  height: 35px;
+  width: 150px;
+}
+.third .content p span{
+    padding: 5px;
+    color: #596d48;
+}
